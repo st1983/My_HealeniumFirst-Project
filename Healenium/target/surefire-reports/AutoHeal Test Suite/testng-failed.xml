@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [AutoHeal Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.automation.autoheal.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="AutoHeal Tests(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.automation.autoheal.tests.SampleTest">
+        <methods>
+          <include name="testAutoHealXPath"/>
+          <include name="testBrokenXPathHealing"/>
+          <include name="testPageLoadTracking"/>
+          <include name="setUp"/>
+          <include name="testExplicitWait"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.autoheal.tests.SampleTest -->
+    </classes>
+  </test> <!-- AutoHeal Tests(failed) -->
+</suite> <!-- Failed suite [AutoHeal Test Suite] -->

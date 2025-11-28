@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutoHeal Test Suite" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="com.automation.autoheal.listeners.TestListener"/>
+    </listeners>
+    
+    <test name="AutoHeal Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.automation.autoheal.tests.SampleTest"/>
+        </classes>
+    </test>
+</suite>
+
